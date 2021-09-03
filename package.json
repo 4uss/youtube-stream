@@ -1,0 +1,24 @@
+{
+  "name": "youtube-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "anKordii",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4uss/youtube-stream.git"
+  },
+  "keywords": [
+    "youtube",
+    "stream",
+    "youtube gaming"
+  ],
+  "dependencies": {
+    "undici": "^4.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/4uss/youtube-stream/issues"
+  },
+  "homepage": "https://github.com/4uss/youtube-stream#readme"
+}
