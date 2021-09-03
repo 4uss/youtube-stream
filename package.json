@@ -7,7 +7,7 @@
   "author": "anKordii",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4uss/youtube-stream.git"
+    "url": "git+https://github.com/4uss/youtube-stream-status.git"
   },
   "keywords": [
     "youtube",
@@ -18,7 +18,7 @@
     "undici": "^4.3.1"
   },
   "bugs": {
-    "url": "https://github.com/4uss/youtube-stream/issues"
+    "url": "https://github.com/4uss/youtube-stream-status/issues"
   },
-  "homepage": "https://github.com/4uss/youtube-stream#readme"
+  "homepage": "https://github.com/4uss/youtube-stream-status#readme"
 }
