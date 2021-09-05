@@ -18,17 +18,26 @@ Example:
 const yt = require('@3xanax/youtube-stream-status');
 
 yt.getStream("UCiaoRUmpQ0mH05w9PVQzYPw")
-    .then(data => console.log(data))
+    .then(data => {
+      console.log(data)
+    })
 
 ```
-Example output:
+Example output when Live:
 ```js
   {
-    "message":"Channel is live",
-    "code":"200"
+      "stream": {
+          "_id": "UCiaoRUmpQ0mH05w9PVQzYPw"
+      }
   }
 ```
 
+Example output when Offline:
+```js
+  {
+      "stream": null
+  }
+```
 
 # Support & Issues
 <b>IMPORTANT</b>: Help me beeing efficient, please! I am developing in my free time for no money. Contribute to the project by posting complete, structured and helpful issues which I can reproduce quickly without asking for missing information.

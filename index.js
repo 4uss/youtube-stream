@@ -4,10 +4,16 @@ async function getStream(id) {
     let url = 'https://www.youtube.com/channel/' + id + '/live';
     const {body} = await request(url);
     let bodyText = await body.text();
-    console.log(bodyText)
     let stream = bodyText.match(/(?<=hlsManifestUrl":").*\.m3u8/g);
-    if (stream) return `{"message":"Channel is live"},{"code":"200"}`;
-    else return `{"message":"Not found"},{"code":"403"}`;
+    if (stream) return JSON.parse(`
+    {
+        "stream": {
+            "_id": "${id}"
+        }
+    }`);
+    else return JSON.parse(`
+    {
+        "stream": null
+    }`);
 }
-
 exports.getStream = getStream;
